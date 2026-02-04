@@ -1,0 +1,95 @@
+---
+const { hero, theme = "light", locale = "en" } = Astro.props;
+
+const lang = hero.languages[locale];
+
+// Images
+const { background, teaser, overlay, logo } = hero.images;
+
+// Content
+const { title, title2 = "", subtitle, cta, note = "", features = [] } = lang;
+---
+
+<section class={`huon-landingpage-hero ${theme}`}>
+  <div class="landing-hero-media"></div>
+
+  <div class="landing-hero-content">
+    <div class="landing-hero-section">
+      <div class="landing-hero-inner">
+        <!-- IMAGE -->
+        <div class="landing-hero-image-wrapper" style={`max-width: 650px`}>
+          {
+            teaser && (
+              <img
+                class="landing-hero-teaser-image"
+                src={teaser}
+                alt="Hero Image"
+                loading="eager"
+              />
+            )
+          }
+
+          {
+            overlay && (
+              <img
+                class="landing-hero-image-overlay overlay-bottom-center"
+                src={overlay}
+                alt=""
+                loading="eager"
+              />
+            )
+          }
+        </div>
+
+        <!-- TEXT -->
+        <div class="landing-hero-text">
+          {
+            logo && (
+              <img
+                class="landing-hero-logo"
+                src={logo}
+                alt="Logo"
+                loading="eager"
+              />
+            )
+          }
+
+          {title && <h1 class="landing-hero-title fade-in">{title}</h1>}
+
+          {
+            title2 && (
+              <h2 class="landing-hero-title2 fade-in delay-1">{title2}</h2>
+            )
+          }
+
+          {
+            subtitle && (
+              <p class="landing-hero-subtitle fade-in delay-2">{subtitle}</p>
+            )
+          }
+
+          {
+            cta && (
+              <button class="landing-hero-cta-button fade-in delay-4">
+                <span class="scroll-text">{cta}</span>
+                <span class="scroll-arrow">↓</span>
+              </button>
+            )
+          }
+
+          {note && <p class="landing-hero-note fade-in delay-5">{note}</p>}
+
+          {
+            features.length > 0 && (
+              <ul class="landing-hero-features fade-in delay-3">
+                {features.map((feature) => (
+                  <li>{feature}</li>
+                ))}
+              </ul>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

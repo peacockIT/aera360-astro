@@ -1,11 +1,37 @@
 ---
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+
+// import Welcome from "../components/Welcome.astro";
+
+import Sections from "../components/sections/Sections.astro";
+
+import data from "../content/pages/katharina-gluchov/data.json";
+const base = new URL("../content/pages/katharina-gluchov/", import.meta.url);
+
+const locale = "en"; // später dynamisch
+const theme = data.theme ?? "light";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-  <Welcome />
-</Layout>
+<BaseLayout theme={theme}>
+  <Hero
+    hero={{
+      ...data.hero,
+      images: {
+        background: data.hero.images.background,
+        teaser: data.hero.images.teaser,
+        overlay: data.hero.images.overlay,
+        logo: data.hero.images.logo,
+      },
+    }}
+    theme={theme}
+    locale={locale}
+  />
+
+  <Sections sections={data.languages[locale].sections} />
+
+  <!-- <Welcome /> -->
+</BaseLayout>

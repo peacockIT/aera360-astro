@@ -1,0 +1,4 @@
+.light-theme {
+  background: var(--color-bg-light);
+  color: #111;
+}

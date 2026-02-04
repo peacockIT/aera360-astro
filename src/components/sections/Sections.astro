@@ -1,0 +1,11 @@
+---
+import SectionRenderer from "./SectionRenderer.astro";
+
+const { sections } = Astro.props;
+---
+
+<main class="huon huon-content-container">
+  <div class="huon-landingpage-container">
+    {sections.map((section) => <SectionRenderer section={section} />)}
+  </div>
+</main>

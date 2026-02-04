@@ -1,0 +1,46 @@
+---
+const {
+  id,
+  title,
+  subtitle,
+  html,
+  alignment = "left",
+  template = "normal",
+  class: extraClass = "",
+  bgImage,
+  purpose,
+  complexity = ["low"],
+} = Astro.props;
+
+// Klassen wie früher in PHP
+let sectionClass = [
+  "huon-landingpage-section",
+  template,
+  extraClass,
+  alignment === "center" ? "centered" : "",
+  "is-visible",
+]
+  .join(" ")
+  .trim();
+---
+
+<section class={sectionClass} data-section-id={id}>
+  <hr class="huon-landingpage-section-bottom-top" />
+
+  {
+    bgImage && (
+      <div
+        class="huon-section-bg"
+        style={`background-image:url(${bgImage});`}
+      />
+    )
+  }
+
+  <div class="huon-section-content">
+    {title && <h3 class="huon-landingpage-section-title">{title}</h3>}
+
+    {subtitle && <h3 class="huon-landingpage-section-subtitle">{subtitle}</h3>}
+
+    {html && <div class="huon-landingpage-section-html" set:html={html} />}
+  </div>
+</section>

@@ -1,0 +1,108 @@
+{
+  "slug": "katharina-gluchov",
+  "route": "partners",
+  "domain": "uaio.love",
+  "template": "landing",
+  "theme": "light",
+  "status": "published",
+
+  "contact": {
+    "email": "katharinagluchov@googlemail.com",
+    "ctaLink": "/contact"
+  },
+
+  "hero": {
+    "images": {
+      "background": "/pages/katharina-gluchov/background.jpg",
+      "teaser": "/pages/katharina-gluchov/teaser.jpg",
+      "overlay": "/pages/katharina-gluchov/overlay.gif",
+      "logo": "/pages/katharina-gluchov/logo.png"
+    },
+    "theme": "dark-theme",
+
+    "languages": {
+      "de": {
+        "title": "Katharina Gluchov",
+        "subtitle": "Kakao-Zeremonien • 1:1 Sound Healing • Herzarbeit",
+        "note": "-",
+        "cta": "Kontakt aufnehmen"
+      },
+      "en": {
+        "title": "Katharina Gluchov",
+        "subtitle": "Cacao Ceremonies • 1:1 Sound Healing • Heart Work",
+        "note": "-",
+        "cta": "Get in Touch"
+      }
+    }
+  },
+
+  "languages": {
+    "de": {
+      "sections": [
+        {
+          "type": "text",
+          "title": "Katharina Gluchov",
+          "subtitle": "Kakao-Zeremonien • 1:1 Sound Healing • Herzarbeit",
+          "alignment": "left",
+          "backgroundImage": "./assets/golden-sound-waves-0.jpg",
+          "html": "<p>Ich begleite Menschen in geschützten Räumen zu mehr Ruhe und innerer Gelassenheit.</p><p>Willkommen — ich bin Katharina.</p><p>Seit über sieben Jahren begleite ich Menschen durch Kakaozeremonien, Heilarbeit und somatische Wahrnehmung. Meine Arbeit schafft einen Raum von Vertrauen, Rückverbindung und stiller Präsenz.</p><p><strong>Was dich erwartet</strong></p><ul><li>1:1 Heilarbeit & intuitive Körperarbeit</li><li>Integration durch Atem und Stille</li><li>Zeremonieller Kakao — im Einzel- und Gruppensetting</li></ul><p>Von der Seele zur Quelle.</p>"
+        },
+
+        {
+          "type": "form",
+          "id": "contact_form",
+          "alignment": "center",
+          "ctaText": "Kontakt aufnehmen",
+          "intro": "Schreibe mir eine Nachricht. Ich melde mich persönlich bei dir.",
+          "note": "Deine Daten werden vertraulich behandelt.",
+          "recipient": "katharinagluchov@googlemail.com",
+          "successMessage": "Danke für deine Nachricht. Ich melde mich bald bei dir."
+        },
+
+        {
+          "type": "footer",
+          "text": "Katharina Gluchov"
+        }
+      ]
+    },
+
+    "en": {
+      "sections": [
+        {
+          "type": "text",
+          "title": "Katharina Gluchov",
+          "subtitle": "Cacao Ceremonies • 1:1 Sound Healing • Heart Work",
+          "alignment": "left",
+          "backgroundImage": "./assets/golden-sound-waves-0.jpg",
+          "html": "<p>I accompany people in protected spaces toward greater calm and inner ease.</p><p>Welcome — I’m Katharina.</p><p>For more than seven years, I have been guiding people through cacao ceremonies, healing work, and somatic awareness. My work creates a space of trust, reconnection, and quiet presence.</p><p><strong>What to expect</strong></p><ul><li>1:1 Healing & intuitive body work</li><li>Integration through breath and stillness</li><li>Ceremonial cacao sessions — private and group settings</li></ul><p>From soul to source.</p>"
+        },
+
+        {
+          "type": "form",
+          "id": "contact_form",
+          "alignment": "center",
+          "ctaText": "Get in Touch",
+          "intro": "Send me a message — I will get back to you personally.",
+          "note": "Your information remains confidential.",
+          "recipient": "katharinagluchov@googlemail.com",
+          "successMessage": "Thank you! I’ll reach out to you personally."
+        },
+
+        {
+          "type": "footer",
+          "text": "Huōn — Music with Meaning."
+        }
+      ]
+    }
+  },
+
+  "metadata": {
+    "profileName": "Katharina Gluchov",
+    "profileRole": "Sound Healing & Cacao Work",
+    "profileImage": "./assets/profile.jpg",
+    "social": {
+      "instagram": "https://instagram.com/katharina.gluchov",
+      "website": "https://katharinagluchov.com"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+---
+import TextSection from "./TextSection.astro";
+import HowToSection from "./HowToSection.astro";
+import FormSection from "./FormSection.astro";
+
+const { section } = Astro.props;
+const type = section.type ?? "text";
+---
+
+{type === "text" && <TextSection {...section} />}
+{type === "how-to" && <HowToSection {...section} />}
+{type === "form" && <FormSection {...section} />}

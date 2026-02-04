@@ -1,0 +1,12 @@
+:root {
+  --color-bg-dark: #0f1115;
+  --color-bg-light: #ffffff;
+  --color-text-dark: #eaeaea;
+  --color-accent: #f0dfa4;
+
+  --max-width: 1100px;
+  --section-spacing: 120px;
+
+  --font-headline: "Inter", system-ui;
+  --font-body: "Inter", system-ui;
+}

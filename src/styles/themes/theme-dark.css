@@ -1,0 +1,4 @@
+.dark-theme {
+  background: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
