@@ -1,0 +1,31 @@
+{
+  "slug": "wellness-massage",
+  "title": "Wellness Massage Bremen",
+  "template": "landing",
+
+  "hero": {
+    "title": "Entspannung für Körper & Geist",
+    "subtitle": "Individuelle Massagen in ruhiger Atmosphäre",
+    "cta": "Termin anfragen"
+  },
+
+  "sections": [
+    {
+      "type": "text",
+      "title": "Über mich",
+      "text": "Ich bin zertifizierte Masseurin mit 10 Jahren Erfahrung."
+    },
+    {
+      "type": "howto",
+      "items": [
+        "Termin anfragen",
+        "Ankommen & entspannen",
+        "Massage genießen"
+      ]
+    },
+    {
+      "type": "form",
+      "recipient": "kunde@email.de"
+    }
+  ]
+}
